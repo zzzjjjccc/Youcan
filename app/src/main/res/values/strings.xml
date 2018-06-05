@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Youcan</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">登陆</string>
+    <string name="user_phone">电话</string>
+    <string name="password">密码</string>
+    <string name="go">登陆</string>
+    <string name="forget_your_password">忘记密码</string>
+    <string name="register">注册</string>
+    <string name="next">下一步</string>
+    <string name="repeat_password">密码确认</string>
+    <string name="login_success">登陆成功</string>
+    <string name="bt_done">编辑完成</string>
+
+    <string name="nav_input">导入</string>
+    <string name="nav_output">导出</string>
+    <string name="nav_mirror">借鉴</string>
+    <string name="nav_share">分享</string>
+    <string name="nav_notice">通知</string>
+    <string name="nav_quit">注销</string>
+    <string name="nav_print">打印</string>
+    <string name="nav_add_person">加关注</string>
+    <string name="nav_lock">锁屏</string>
+    <string name="me_discover">可被发现</string>
+    <string name="done">完成</string>
+    <string name="edit">编辑</string>
+    <string name="restore">备份</string>
+    <string name="communicate">交流</string>
+    <string name="setting">设置</string>
+    <string name="delete">删除</string>
+    <string name="jichang0301">ID: Jichang0301</string>
+    <string name="name">姓名: 张加昌</string>
+    <string name="me_quit_account">退出本账号</string>
+    <string name="subscribe">关注的人</string>
+    <string name="youcan_main_fragment_title">编辑</string>
+    <string name="youcan_contacts_fragment_title">联系人</string>
+    <string name="youcan_discover_fragment_title">发现</string>
+    <string name="youcan_me_fragment_title">我</string>
+    <string name="menu_youcan_add">添加</string>
+    <string name="fragment_me_faith">天行健，君子以自强不息。天道酬勤。坦荡做人，真诚为人。坦荡真诚，光明磊落，心口如一，言行一致。坦诚待人，工作求精，自省自律。贪于近者则遗远，溺于利者则伤名。态度决定一切，细节决定成败。态度比现实更重要，效果比道理更重要。踏踏实实做事，清清白白做人。是非天天有，不听自然无。事常于人违，事总在人为。实实在在做人，尽心尽力做事。生命之灯因热情而点燃，生命之舟因拼搏而前行。生命的意义在于付出，在于给予，而不是在于接受，也不是在于争取。、生命不息，奋斗不止。生活尽管有顺境也有逆境，但对于奋斗者而言，生活总是美好的。</string>
+    <string name="frament_me_faith_title">信念</string>
+    <string name="load_more">查看更多</string>
+    <string name="load_less">折叠</string>
+    <string name="youcan_version">当前版本</string>
+    <string name="network_return_success">success</string>
+    <string name="login_account_password_is_empty">账号或密码为空</string>
+    <string name="register_password_different">两次输入的密码不一样</string>
+    <string name="add_person">添加关注</string>
+    <string name="person_school">学校</string>
+    <string name="person_major">专业</string>
+    <string name="person_sex">性别</string>
+    <string name="person_password">密码</string>
+    <string name="person_phone">电话号码</string>
+    <string name="person_name">姓名</string>
+    <string name="do_not_know_error">出现未知错误</string>
+    <string name="confirm">确定</string>
+    <string name="has_been_subscribe">已关注</string>
+    <string name="yes_net_response">yes</string>
+    <string name="no_net_response">no</string>
+    <string name="can_add_idol">服务器异常，不能添加关注</string>
+    <string name="nev_neerby">附近</string>
+    <string name="nav_search">搜索附近</string>
+    <string name="nav_broadcast_yourself">可被发现</string>
+    <string name="device_address">Device Address</string>
+    <string name="distance">大约离您</string>
+    <string name="unKnown">unKnown</string>
+    <string name="refuse_open_bluetooth">拒绝开启蓝牙将导致不能广播数据，其他人扫描不到您</string>
+    <string name="check_your_information_carefully">请仔细核对信息，看是否填写完整</string>
+    <string name="your_goals">目标</string>
+    <string name="your_goal_list">目标列表</string>
+
+
+</resources>

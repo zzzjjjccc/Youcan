@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_c3c3c3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_c3c3c3"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_youcan_toobar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_55ffffff"
+            android:padding="@dimen/dimen_10">
+
+            <include layout="@layout/item_youcan_me" />
+
+            <TextView
+                android:id="@+id/tv_faith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_me_to_profile"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/frament_me_faith_title"
+                android:textSize="@dimen/font_size_18" />
+
+            <RelativeLayout
+                android:id="@+id/rl_faith"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_faith"
+                android:layout_marginTop="@dimen/dimen_13"
+                android:background="@drawable/shape_layout_border"
+                android:paddingBottom="@dimen/dimen_15"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:paddingTop="@dimen/dimen_14">
+
+                <TextView
+                    android:id="@+id/tv_fragment_faith"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/dimen_9"
+                    android:maxLines="6"
+                    android:text="@string/fragment_me_faith"
+                    android:textColor="@color/color_000000"
+                    android:textSize="@dimen/font_size_16" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_load_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fragment_faith"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                        android:id="@+id/tv_load_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/dimen_5"
+                        android:drawableRight="@drawable/icon_text_vision_more"
+                        android:text="@string/load_more"
+                        android:textColor="@color/color_000000"
+                        android:textSize="@dimen/font_size_16" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_me_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_faith"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="@string/setting"
+                android:textSize="@dimen/font_size_18" />
+
+            <RelativeLayout
+                android:id="@+id/rl_me_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_below="@+id/tv_me_setting"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/shape_layout_border"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:textColor="@color/color_000000"
+                    android:id="@+id/tv_me_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/dimen_20"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_notification"
+                    android:text="@string/nav_notice"
+                    android:textSize="@dimen/font_size_16" />
+
+                <Switch
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/s_me_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_me_discover"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_below="@+id/rl_me_notice"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/shape_layout_border"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:textColor="@color/color_000000"
+                    android:id="@+id/tv_me_can_discover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/dimen_20"
+                    android:drawableStart="@drawable/ic_broadcast"
+                    android:text="@string/me_discover"
+                    android:textSize="@dimen/font_size_16" />
+
+                <Switch
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/s_me_broadcast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_me_version"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_below="@+id/rl_me_discover"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/shape_layout_border"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:textColor="@color/color_000000"
+                    android:id="@+id/tv_youcan_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/dimen_20"
+                    android:drawableStart="@drawable/ic_add_alert_white_24dp"
+                    android:text="@string/youcan_version"
+                    android:textSize="@dimen/font_size_16" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:textColor="@color/color_000000"
+                android:id="@+id/tv_me_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_me_version"
+                android:layout_marginTop="@dimen/dimen_50"
+                android:background="@drawable/shape_layout_border"
+                android:gravity="center"
+                android:padding="@dimen/dimen_10"
+                android:text="@string/me_quit_account"
+                android:textSize="@dimen/font_size_16" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

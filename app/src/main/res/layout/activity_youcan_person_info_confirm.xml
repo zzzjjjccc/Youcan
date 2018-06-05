@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/color_c3c3c3"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/item_youcan_toobar" />
+
+    <RelativeLayout
+        android:background="@color/color_55ffffff"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dimen_10">
+
+        <LinearLayout
+            android:background="@drawable/shape_layout_border"
+            android:id="@+id/ll_me_to_profile"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_width="match_parent"
+            android:padding="@dimen/dimen_10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_me_header_image"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_width="@dimen/dimen_50"
+                android:src="@drawable/header" />
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_2">
+
+                <EditText
+                    android:hint="@string/person_phone"
+                    android:id="@+id/tv_person_detail_phone"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/font_size_16" />
+
+                <EditText
+                    android:hint="@string/person_password"
+                    android:id="@+id/tv_person_detail_password"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/font_size_16" />
+
+                <EditText
+                    android:hint="@string/person_school"
+                    android:id="@+id/tv_person_detail_school"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/font_size_16" />
+
+                <EditText
+                    android:hint="@string/person_major"
+                    android:id="@+id/tv_person_detail_major"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/font_size_16" />
+
+                <EditText
+                    android:hint="@string/person_name"
+                    android:id="@+id/tv_person_detail_name"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/font_size_16" />
+
+                <EditText
+                    android:hint="@string/person_sex"
+                    android:id="@+id/tv_person_detail_sex"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/font_size_16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@drawable/shape_layout_border"
+            android:gravity="center"
+            android:id="@+id/tv_person_detail_add"
+            android:layout_below="@+id/ll_me_to_profile"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:layout_width="match_parent"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/confirm"
+            android:textSize="@dimen/font_size_16" />
+
+    </RelativeLayout>
+
+</LinearLayout>

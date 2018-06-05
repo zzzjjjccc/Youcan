@@ -1,0 +1,17 @@
+android {
+
+    productFlavors {
+        applicationVariants.all { variant ->
+            if (variant.buildType.name.equals('debug')) {
+                buildConfigField "String", "SERVER_ADDRESS", '"http://192.168.1.101:8000/youcan/"'
+            } else if (variant.buildType.name.equals('release')) {
+                buildConfigField "String", "SERVER_ADDRESS", '"http://140.143.95.232:8080/youcan/"'
+            }
+            // You can deploy the url of this project here, and use them in you code. For example:
+            buildConfigField "String", "BING_PICTURE_URL", '"http://guolin.tech/api/bing_pic"'
+
+            buildConfigField "String", "FAITH", '"合抱之木 生于毫末 九层之台 起于累土 千里之行 始于足下"'
+        }
+    }
+
+}

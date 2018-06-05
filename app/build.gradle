@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+apply from: './YoucanGradle/ApiConfig.gradle'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    signingConfigs {
+
+        release {
+            storeFile file("f:\\jichang.jks")
+            keyAlias "jichangkey"
+            keyPassword "zjc&ll576591"
+            storePassword 'zjc&ll576591'
+        }
+    }
+
+    defaultConfig {
+        applicationId "jerry.com.youcan"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            // Debug status can show log
+            buildConfigField "boolean", "SHOW_LOG", "true"
+            buildConfigField "String" , "VERSION", '"开发版"'
+            // You can also deploy the value of string which in values like this
+            resValue "string", "author", "jichang"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationIdSuffix ".release"
+            // Release status can't show log
+            buildConfigField "boolean", "SHOW_LOG", "false"
+            buildConfigField "String" , "VERSION", '"正式版"'
+
+            // You can also deploy the value of string which in values like this
+            resValue "string", "author", "Zhang Jiachang"
+
+            // Add this for sign release apk
+            signingConfig signingConfigs.release
+        }
+    }
+//    This part must be included for add kotlin to project.
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:23.2.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:cardview-v7:23.2.1'
+
+    testCompile 'junit:junit:4.12'
+    compile project(':JichangProjectLibrary')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/nev_neerby">
+        <menu>
+            <item
+                android:id="@+id/nav_search"
+                android:icon="@drawable/ic_neer_person"
+                android:title="@string/nav_search" />
+            <item
+                android:id="@+id/nav_broadcast_yourself"
+                android:icon="@drawable/ic_broadcast"
+                android:title="@string/nav_broadcast_yourself" />
+        </menu>
+    </item>
+
+    <item android:title="@string/your_goals">
+        <menu>
+            <item
+                android:id="@+id/nav_mirror"
+                android:icon="@drawable/ic_goal"
+                android:title="@string/your_goal_list" />
+
+
+        </menu>
+    </item>
+
+    <item android:title="@string/setting">
+
+        <menu>
+            <item
+                android:id="@+id/quit_app"
+                android:icon="@drawable/ic_exit_to_app_white_24dp"
+                android:title="@string/nav_quit" />
+        </menu>
+    </item>
+
+</menu>

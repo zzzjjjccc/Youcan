@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/item_youcan_toobar" />
+
+    <EditText
+        android:id="@+id/ev_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_frame_layout"
+        android:layout_gravity="center"
+        android:background="@color/edit_content_activity_background_color"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_24" />
+
+</RelativeLayout>

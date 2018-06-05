@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:fitsSystemWindows="true"
+            android:id="@+id/fl_main_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/v_divider"
+            android:background="@color/color_ffffffff" />
+
+        <View
+            android:id="@+id/v_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_above="@+id/rg_activity_main"
+            android:background="@color/color_c3c3c3" />
+
+        <RadioGroup
+            android:id="@+id/rg_activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_ffffffff"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_activity_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_radio_button_main_drawable"
+                android:gravity="center"
+                android:padding="@dimen/dimen_5"
+                android:text="@string/youcan_main_fragment_title"
+                android:textColor="@drawable/selector_text_color"
+                android:textSize="@dimen/font_size_9" />
+
+            <RadioButton
+                android:id="@+id/rb_activity_contacts"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/selector_radio_button_contacts_drawable"
+                android:gravity="center"
+                android:padding="@dimen/dimen_5"
+                android:text="@string/youcan_contacts_fragment_title"
+                android:textColor="@drawable/selector_text_color"
+                android:textSize="@dimen/font_size_9" />
+
+            <RadioButton
+                android:id="@+id/rb_activity_discover"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/selector_radio_button_discover_drawable"
+                android:gravity="center"
+                android:padding="@dimen/dimen_5"
+                android:text="@string/youcan_discover_fragment_title"
+                android:textColor="@drawable/selector_text_color"
+                android:textSize="@dimen/font_size_9" />
+
+            <RadioButton
+                android:id="@+id/rb_activity_me"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/selector_radio_button_me_drawable"
+                android:gravity="center"
+                android:padding="@dimen/dimen_5"
+                android:text="@string/youcan_me_fragment_title"
+                android:textColor="@drawable/selector_text_color"
+                android:textSize="@dimen/font_size_9" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/drawer_bg"
+        app:headerLayout="@layout/item_youcan_nav_header"
+        app:menu="@menu/menu_youcan_nav">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+

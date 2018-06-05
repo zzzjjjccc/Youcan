@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jichang.youcan">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.jichang.youcan.activity.LoginActivity"
+            android:theme="@style/LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jichang.youcan.activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.jichang.youcan.activity.RegisterActivity"
+            android:theme="@style/Translucent" />
+        <activity
+            android:name="com.jichang.youcan.activity.ContentActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.jichang.youcan.activity.EditActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.jichang.youcan.activity.SubscribePersonActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.jichang.youcan.activity.UserDetailActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.jichang.youcan.activity.UserConfirmActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.jichang.youcan.activity.NearByActivity"
+            android:theme="@style/AppTheme" />
+
+        <service
+            android:name="com.jichang.youcan.service.NoticeService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.jichang.youcan.broadcast.NoticeBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="jerry.com.note.broadcast.EVERY_NOTICE" />
+                <action android:name="jerry.com.note.broadcast.NOTE_NOTICE" />
+                <action android:name="jerry.com.note.broadcast.START_SERVICE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="activity.ShowTodayNoteActivity"></activity>
+    </application>
+
+</manifest>

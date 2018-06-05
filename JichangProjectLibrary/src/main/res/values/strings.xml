@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JichangProjectLibrary</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="dialog_choose">请选择</string>
+    <string name="notice_user">该功能工程师正在加紧开发中，敬请稍后</string>
+</resources>

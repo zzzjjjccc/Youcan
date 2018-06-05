@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        debug {
+            // Debug status can show log
+            buildConfigField "boolean", "SHOW_LOG", "true"
+
+            // You can also deploy the value of string which in values like this
+            resValue "string", "author", "jichang"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // Release status can't show log
+            buildConfigField "boolean", "SHOW_LOG", "false"
+
+            // You can also deploy the value of string which in values like this
+            resValue "string", "author", "Zhang Jiachang"
+        }
+    }
+    buildToolsVersion '27.0.3'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    api 'com.android.support:appcompat-v7:23.4.0'
+    testCompile 'junit:junit:4.12'
+    api 'com.squareup.okhttp3:okhttp:3.4.1'
+}
